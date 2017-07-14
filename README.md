@@ -5,9 +5,9 @@ Yes, this is a bit messy and could get a whole lot cleaner if we used this all t
 
 ## Prerequisites
 - [Jupyter Notebook](https://jupyter.org) (Highly recommend using virtual environments. `pip install jupyter` if you're already using Python)
-- [Pandas](http://pandas.pydata.org/)
+- [Pandas](http://pandas.pydata.org/) (`pip install pandas`)
 - markegge's [get-comments-with-api](https://github.com/markegge/fr-2017-09490-comments/blob/master/get-comments-with-api.ipynb) notebook
-- [csvkit](https://csvkit.readthedocs.io/en/1.0.2/)
+- [csvkit](https://csvkit.readthedocs.io/en/1.0.2/) (`pip install csvkit`)
 - jot (included in MacOS, must [compile from source](http://unix.ittoolbox.com/groups/technical-functional/shellscript-l/jot-on-linux-4025237) on other platforms. Alternately, use another random number generator in line 18 of generate-random.sh.)
 - GNU core utilities (included in Linux, must install on MacOS using `brew install coreutils`)
 
