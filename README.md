@@ -25,3 +25,5 @@ Yes, this is a bit messy and could get a whole lot cleaner if we used this all t
 - run `sh search-comments.sh [myfile.txt]` to search clean.csv for all the terms in your text file. Output will be in `[myfile].csv`.]
 
 - This all works for me on MacOS Sierra. It should work fine on Linux, but in line 19 of generate-random.sh, you'll need to change `gshuf` to `shuf`.
+
+- Our analysis of 650,000 comments posted as of 7:00 am MDT Monday, July 10 is available [here](https://docs.google.com/spreadsheets/d/1BdAXRK-sVjqu-NK5nmaIKCR1-dDW2VDO48CDD9_FREA/pubhtml) and [here](https://docs.google.com/spreadsheets/d/1uZf4JD1x9gdRS66ZMcYC_1Aib8hU1fXBVeFgFVyeWUI/pubhtml).
