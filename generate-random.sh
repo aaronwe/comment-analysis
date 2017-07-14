@@ -14,6 +14,8 @@ printf "Choosing " && printf $num && printf " unique random numbers between 1 an
 # start with 2500, get rid of duplicates, shuffle, use first 2000, sort, save
 echo "line_number" > random-$num.csv
 extra=$(expr $num + $num)
+#if you don't have OS X, compile jot from source or use a differen random number generator.
+#on linux, use shuf instead of gshuf.
 jot -r $extra  1 $rows | sort -u | gshuf | head -n $num | sort -n >> random-$num.csv
 
 # do we have a good list?
