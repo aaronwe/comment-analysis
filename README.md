@@ -8,7 +8,7 @@ Yes, this is a bit messy and could get a whole lot cleaner if we used this all t
 - [Pandas](http://pandas.pydata.org/) (`pip install pandas`)
 - markegge's [get-comments-with-api](https://github.com/markegge/fr-2017-09490-comments/blob/master/get-comments-with-api.ipynb) notebook
 - [csvkit](https://csvkit.readthedocs.io/en/1.0.2/) (`pip install csvkit`)
-- jot (included in MacOS, must [compile from source](http://unix.ittoolbox.com/groups/technical-functional/shellscript-l/jot-on-linux-4025237) on other platforms. Alternately, use another random number generator in line 18 of generate-random.sh.)
+- jot (included in MacOS, must [compile from source](http://unix.ittoolbox.com/groups/technical-functional/shellscript-l/jot-on-linux-4025237) on other platforms. Alternately, use another random number generator in line 19 of generate-random.sh.)
 - GNU core utilities (included in Linux, must install on MacOS using `brew install coreutils`)
 
 ## Step-by-step
@@ -22,4 +22,6 @@ Yes, this is a bit messy and could get a whole lot cleaner if we used this all t
 ## Notes
 - If you just want to search the comment set for a bunch of terms, first generate a `clean.csv` file: `csvclean -l comments.csv && mv comments_out.csv clean.csv`
 - Then put your search terms into a .txt file, one term per line. (csvgrep uses [regex](https://regex101.com), so terms like `liv(e|ed|ing) in utah` will find people who live, lived, or are living in Utah. `, utah (\d*)` finds digits (like a zip code) after comma-space-utah.)
-- run `sh search-comments.sh [myfile.txt]` to search clean.csv for all the terms in your text file. Output will be in `[myfile].csv`.
+- run `sh search-comments.sh [myfile.txt]` to search clean.csv for all the terms in your text file. Output will be in `[myfile].csv`.]
+
+- This all works for me on MacOS Sierra. It should work fine on Linux, but in line 19 of generate-random.sh, you'll need to change `gshuf` to `shuf`.
