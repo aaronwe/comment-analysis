@@ -1,0 +1,21 @@
+blanding resident
+bluff resident
+monticello resident
+salt lake city resident
+san juan county resident
+utah resident
+residen(t|ts) of blanding
+residen(t|ts) of bluff
+residen(t|ts) of monticello
+residen(t|ts) of salt lake
+residen(t|ts) of utah
+residen(t|ts) of san juan
+liv(e|ed|ing) in blanding
+liv(e|ed|ing) in bluff
+liv(e|ed|ing) in monticello
+liv(e|ed|ing) in salt lake
+liv(e|ed|ing) in san juan
+liv(e|ed|ing) in utah
+, ut\b
+, utah\Z
+, utah (\d*)

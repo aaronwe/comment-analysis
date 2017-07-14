@@ -1,0 +1,4 @@
+jupyter notebook get-comments-with-api.ipynb
+sh match-random.sh
+sh search-comments.sh utah-residents.txt
+sh random-from-search.sh 1000 utah-residents.csv
